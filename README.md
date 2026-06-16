@@ -250,15 +250,5 @@ Original dashboard preview assets:
 
 The live frontend provides the full interactive version under [frontend/index.html](frontend/index.html).
 
-## Resume Bullet Points
 
-- Built an enterprise banking lakehouse platform with Kafka ingestion, PySpark Delta-style Bronze/Silver/Gold processing, Airflow orchestration, and warehouse marts for executive risk analytics.
-- Designed scalable synthetic financial data generators supporting 500M+ record simulations without committing large datasets to source control.
-- Implemented governed AI/RAG reporting with Gold-only retrieval, citation enforcement, prompt versioning, refusal logic, RBAC-aware metadata, and answer audit trails.
-- Created fraud anomaly scoring, customer risk segmentation, data quality scorecards, PII masking, lineage, audit logging, Docker/Kubernetes deployment, and CI/CD workflows.
-- Delivered a premium executive dashboard covering fraud intelligence, Customer 360, pipeline monitoring, lakehouse exploration, AI governance, report generation, lineage, quality, and audit views.
-
-## Recruiter-Friendly Summary
-
-Apex Meridian Bank Intelligence Platform is a complete original banking data engineering portfolio project demonstrating large-scale data pipelines, real-time streaming, lakehouse architecture, cloud-platform-compatible storage patterns, data governance, ML fraud intelligence, AI-governed reporting, dashboard engineering, CI/CD, and containerized deployment.
 
