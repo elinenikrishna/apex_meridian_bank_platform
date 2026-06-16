@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apex-meridian-frontend
+  namespace: apex-meridian
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: apex-meridian-frontend
+  template:
+    metadata:
+      labels:
+        app: apex-meridian-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: apex-meridian-frontend:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
+

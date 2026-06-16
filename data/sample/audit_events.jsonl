@@ -1,0 +1,5 @@
+{"event_id":"audit-20260616-0001","actor":"airflow:fraud_model_scoring","action":"score_transactions","dataset":"silver.card_transactions","status":"success","timestamp":"2026-06-16T08:41:18Z"}
+{"event_id":"audit-20260616-0002","actor":"ai-agent:weekly_report","action":"validate_report_metrics","dataset":"gold.fraud_daily_kpis","status":"success","timestamp":"2026-06-16T08:55:04Z"}
+
+{"event_id": "audit-3c2c1f337d3d", "actor": "api:executive-demo", "action": "ask_governed_chatbot", "dataset": "unresolved_dataset_request", "status": "refused", "timestamp": "2026-06-16T19:22:00.157168+00:00", "metadata": {"role": "risk_executive", "audit_event_id": "ai-audit-5d2f91b78911"}}
+{"event_id": "audit-10d35424e559", "actor": "api:executive-demo", "action": "ask_governed_chatbot", "dataset": "unresolved_dataset_request", "status": "refused", "timestamp": "2026-06-16T19:25:42.053836+00:00", "metadata": {"role": "risk_executive", "audit_event_id": "ai-audit-bc2612d51684"}}

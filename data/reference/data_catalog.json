@@ -1,0 +1,27 @@
+{
+  "platform": "Apex Meridian Bank Intelligence Platform",
+  "approved_gold_datasets": [
+    {
+      "name": "gold.fraud_daily_kpis",
+      "owner": "Financial Crimes Analytics",
+      "classification": "confidential",
+      "allowed_ai_use": true,
+      "retention": "7 years"
+    },
+    {
+      "name": "gold.customer_360",
+      "owner": "Customer Intelligence",
+      "classification": "restricted",
+      "allowed_ai_use": true,
+      "retention": "7 years"
+    },
+    {
+      "name": "gold.data_quality_scorecards",
+      "owner": "Data Governance Office",
+      "classification": "internal",
+      "allowed_ai_use": true,
+      "retention": "3 years"
+    }
+  ]
+}
+

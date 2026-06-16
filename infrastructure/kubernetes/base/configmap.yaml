@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: apex-meridian-config
+  namespace: apex-meridian
+data:
+  APEX_ENV: "kubernetes"
+  KAFKA_BOOTSTRAP_SERVERS: "kafka.apex-meridian.svc.cluster.local:9092"
+  VECTOR_STORE_PATH: "/data/vector_store/governed_gold_index.json"
+  AUDIT_LOG_PATH: "/data/audit/audit_events.jsonl"
+  PROMPT_VERSION: "amip-reporting-v1.3"
+

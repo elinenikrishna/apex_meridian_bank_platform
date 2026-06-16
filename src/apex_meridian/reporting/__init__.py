@@ -1,0 +1,2 @@
+"""Executive report generation utilities."""
+

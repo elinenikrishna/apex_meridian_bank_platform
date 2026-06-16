@@ -1,0 +1,18 @@
+sequenceDiagram
+  participant Source
+  participant Kafka
+  participant Bronze
+  participant Silver
+  participant Gold
+  participant Warehouse
+  participant AI
+  participant Audit
+  Source->>Kafka: transaction and fraud events
+  Kafka->>Bronze: raw payload append with checkpoint
+  Bronze->>Silver: schema validation, dedupe, masking
+  Silver->>Gold: KPI aggregation and quality scoring
+  Gold->>Warehouse: executive marts
+  Gold->>AI: approved context indexing
+  AI->>Audit: cited answer audit event
+  Warehouse->>Audit: report validation event
+

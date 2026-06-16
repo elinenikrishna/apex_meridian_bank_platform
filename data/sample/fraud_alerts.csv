@@ -1,0 +1,4 @@
+alert_id,transaction_id,customer_id,event_ts,alert_type,alert_score,case_status,analyst_queue
+ALERT-00000000000001,TXN-0000000000000002,CUST-0000001002,2026-06-09T11:04:00Z,device_mismatch,0.9182,escalated,digital-risk
+ALERT-00000000000002,TXN-0000000000000003,CUST-0000001003,2026-06-10T17:46:00Z,amount_spike,0.8841,confirmed,merchant-risk
+

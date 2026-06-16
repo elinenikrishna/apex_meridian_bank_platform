@@ -1,0 +1,30 @@
+flowchart LR
+  subgraph SourceSystems["Source Systems"]
+    MYSQL["MySQL customer core"]
+    POSTGRES["PostgreSQL card auth"]
+    MONGO["MongoDB digital banking"]
+    CASSANDRA["Cassandra payment events"]
+  end
+  KAFKA["Kafka event streaming"]
+  AIRFLOW["Airflow orchestration"]
+  BRONZE["Bronze raw lakehouse"]
+  SILVER["Silver trusted lakehouse"]
+  GOLD["Gold governed lakehouse"]
+  WH["Warehouse marts"]
+  VECTOR["Vector context layer"]
+  AI["AI governance and reporting"]
+  API["FastAPI services"]
+  UI["Executive web app"]
+  AUDIT["Lineage, quality, audit"]
+
+  MYSQL --> AIRFLOW --> BRONZE
+  POSTGRES --> KAFKA --> BRONZE
+  MONGO --> KAFKA
+  CASSANDRA --> KAFKA
+  BRONZE --> SILVER --> GOLD --> WH --> API --> UI
+  GOLD --> VECTOR --> AI --> API
+  AIRFLOW --> AUDIT
+  SILVER --> AUDIT
+  GOLD --> AUDIT
+  AI --> AUDIT
+

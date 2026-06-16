@@ -1,0 +1,13 @@
+{
+  "as_of": "2026-06-16T09:00:00Z",
+  "transaction_volume_7d": 128450982,
+  "transaction_amount_7d": 18742550913.42,
+  "fraud_loss_avoided_7d": 24840150.25,
+  "confirmed_fraud_rate_bps": 18.7,
+  "chargeback_rate_bps": 31.4,
+  "active_customers": 8420000,
+  "high_risk_merchants": 183,
+  "pipeline_sla_percent": 99.63,
+  "gold_quality_score": 98.4
+}
+

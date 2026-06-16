@@ -1,0 +1,6 @@
+customer_id,full_name,email,phone,ssn_token,segment,home_region,opened_date,kyc_status,annual_income_band
+CUST-0000001001,Ari Vale,ari.vale1001@example.apex,+1-555-201-1001,tok_ssn_000000001001,Apex Everyday,Northeast,2018-03-12,verified,50-100k
+CUST-0000001002,Maya Reyes,maya.reyes1002@example.apex,+1-555-202-1002,tok_ssn_000000001002,Summit Credit Builder,West,2021-08-04,verified,0-50k
+CUST-0000001003,Priya Iyer,priya.iyer1003@example.apex,+1-555-203-1003,tok_ssn_000000001003,Meridian Prime,Pacific,2016-11-20,verified,250k+
+CUST-0000001004,Nolan Stone,nolan.stone1004@example.apex,+1-555-204-1004,tok_ssn_000000001004,Horizon Small Business,Southeast,2019-05-18,review,100-250k
+

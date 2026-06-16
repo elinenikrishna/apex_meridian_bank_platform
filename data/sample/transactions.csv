@@ -1,0 +1,6 @@
+transaction_id,customer_id,account_id,merchant_id,event_ts,amount,currency,merchant_category,channel,region,authorization_status,device_trust_score,card_present,risk_signal_count
+TXN-0000000000000001,CUST-0000001001,ACCT-0000001001,MERC-00000001,2026-06-09T10:15:00Z,42.18,USD,Everyday grocery,tap,Northeast,approved,0.932,true,0
+TXN-0000000000000002,CUST-0000001002,ACCT-0000001002,MERC-00000002,2026-06-09T11:03:00Z,984.44,USD,Digital gaming marketplaces,ecommerce,West,review,0.284,false,5
+TXN-0000000000000003,CUST-0000001003,ACCT-0000001003,MERC-00000004,2026-06-10T17:44:00Z,1432.77,USD,Cross-border luxury resale,mobile_wallet,Pacific,approved,0.351,false,4
+TXN-0000000000000004,CUST-0000001004,ACCT-0000001004,MERC-00000003,2026-06-11T08:29:00Z,218.12,USD,Expedited travel brokers,chip,Southeast,approved,0.811,true,1
+

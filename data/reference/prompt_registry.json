@@ -1,0 +1,10 @@
+{
+  "prompts": [
+    {
+      "prompt_version": "amip-reporting-v1.3",
+      "owner": "AI Risk Council",
+      "approved_for": ["weekly_executive_risk", "fraud_trend_summary", "pipeline_quality_explanation"],
+      "required_controls": ["gold_context_only", "dataset_citations", "unsupported_question_refusal", "audit_event"]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex Meridian Bank Intelligence Platform</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="rail">
+        <div class="brand">
+          <div class="brand-mark">AM</div>
+          <div>
+            <strong>Apex Meridian</strong>
+            <span>Bank Intelligence</span>
+          </div>
+        </div>
+        <nav id="nav" class="nav" aria-label="Platform views">
+          <button class="active" data-view="landing">Overview</button>
+          <button data-view="executive">Command Center</button>
+          <button data-view="fraud">Fraud Intelligence</button>
+          <button data-view="customer">Customer 360</button>
+          <button data-view="pipelines">Pipelines</button>
+          <button data-view="lakehouse">Lakehouse</button>
+          <button data-view="governance">AI Governance</button>
+          <button data-view="chatbot">Banking Chatbot</button>
+          <button data-view="reports">Reports</button>
+          <button data-view="lineage">Lineage</button>
+          <button data-view="quality">Quality</button>
+          <button data-view="audit">Audit</button>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <section id="landing" class="view active">
+          <div class="hero">
+            <canvas id="heroCanvas" aria-hidden="true"></canvas>
+            <div class="hero-copy">
+              <p class="eyebrow">Apex Meridian Bank</p>
+              <h1>Intelligence Platform</h1>
+              <p>
+                Governed lakehouse analytics, financial-crime intelligence, executive risk reporting,
+                and cited AI answers across high-scale banking domains.
+              </p>
+              <div class="hero-actions">
+                <button data-jump="executive">Open Command Center</button>
+                <button data-jump="lakehouse" class="secondary">Explore Lakehouse</button>
+              </div>
+            </div>
+          </div>
+          <div class="metric-grid compact">
+            <article class="metric">
+              <span>7D Transactions</span>
+              <strong>128.45M</strong>
+              <em>+6.8% week over week</em>
+            </article>
+            <article class="metric">
+              <span>Fraud Loss Avoided</span>
+              <strong>$24.84M</strong>
+              <em>Gold validated</em>
+            </article>
+            <article class="metric">
+              <span>Gold Quality</span>
+              <strong>98.4%</strong>
+              <em>42 AI reports validated</em>
+            </article>
+            <article class="metric">
+              <span>Pipeline SLA</span>
+              <strong>99.63%</strong>
+              <em>Real-time and batch</em>
+            </article>
+          </div>
+        </section>
+
+        <section id="executive" class="view">
+          <header class="view-head">
+            <div>
+              <p class="eyebrow">Executive Command Center</p>
+              <h2>Enterprise risk posture</h2>
+            </div>
+            <button id="refreshKpis">Refresh</button>
+          </header>
+          <div class="metric-grid" id="executiveMetrics"></div>
+          <div class="dashboard-grid">
+            <section class="panel wide">
+              <h3>Fraud Trend</h3>
+              <div id="fraudTrendChart" class="bar-chart"></div>
+            </section>
+            <section class="panel">
+              <h3>Risk Mix</h3>
+              <canvas id="riskDonut" width="260" height="260"></canvas>
+            </section>
+            <section class="panel">
+              <h3>Executive Exceptions</h3>
+              <ul class="signal-list">
+                <li><strong>Merchant risk</strong><span>183 high-risk merchants</span></li>
+                <li><strong>Chargebacks</strong><span>31.4 bps portfolio rate</span></li>
+                <li><strong>AI validation</strong><span>0 uncited report claims</span></li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section id="fraud" class="view">
+          <header class="view-head">
+            <div>
+              <p class="eyebrow">Financial Crimes</p>
+              <h2>Fraud intelligence dashboard</h2>
+            </div>
+            <div class="status-pill">Model v4.8 monitored</div>
+          </header>
+          <div class="dashboard-grid">
+            <section class="panel wide">
+              <h3>High-Risk Merchant Categories</h3>
+              <div id="merchantRiskTable" class="data-table"></div>
+            </section>
+            <section class="panel">
+              <h3>Regional Risk</h3>
+              <div id="regionalRisk" class="region-stack"></div>
+            </section>
+            <section class="panel">
+              <h3>Fraud Signals</h3>
+              <div class="feature-list">
+                <span>Velocity burst</span>
+                <span>Device mismatch</span>
+                <span>Cross-border spike</span>
+                <span>Chargeback echo</span>
+                <span>Merchant onboarding risk</span>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section id="customer" class="view">
+          <header class="view-head">
+            <div>
+              <p class="eyebrow">Customer Intelligence</p>
+              <h2>Customer 360 analytics</h2>
+            </div>
+            <input id="customerSearch" placeholder="CUST-0000421052" />
+          </header>
+          <div class="dashboard-grid">
+            <section class="panel wide">
+              <h3>Segments</h3>
+              <div id="customerSegments" class="segment-grid"></div>
+            </section>
+            <section class="panel">
+              <h3>Risk Profile</h3>
+              <div id="riskProfile" class="profile"></div>
+            </section>
+            <section class="panel">
+              <h3>Behavior Changes</h3>
+              <div id="behaviorChanges" class="mini-bars"></div>
+            </section>
+          </div>
+        </section>
+
+        <section id="pipelines" class="view">
+          <header class="view-head">
+            <div>
+              <p class="eyebrow">Platform Operations</p>
+              <h2>Pipeline monitoring</h2>
+            </div>
+            <div class="status-pill good">SLA 99.63%</div>
+          </header>
+          <div id="pipelineBoard" class="pipeline-board"></div>
+        </section>
+
+        <section id="lakehouse" class="view">
+          <header class="view-head">
+            <div>
+              <p class="eyebrow">Lakehouse Explorer</p>
+              <h2>Bronze, Silver, and Gold layers</h2>
+            </div>
+            <div class="status-pill">Delta-style logs enabled</div>
+          </header>
+          <div id="lakehouseLayers" class="layer-grid"></div>
+        </section>
+
+        <section id="governance" class="view">
+          <header class="view-head">
+            <div>
+              <p class="eyebrow">AI Governance Center</p>
+              <h2>Cited, controlled reporting</h2>
+            </div>
+            <div class="status-pill good">All policies active</div>
+          </header>
+          <div id="policyGrid" class="policy-grid"></div>
+        </section>
+
+        <section id="chatbot" class="view">
+          <header class="view-head">
+            <div>
+              <p class="eyebrow">Governed AI</p>
+              <h2>Banking intelligence chatbot</h2>
+            </div>
+            <div class="status-pill">Gold-only context</div>
+          </header>
+          <div class="chat-layout">
+            <div id="chatWindow" class="chat-window"></div>
+            <form id="chatForm" class="chat-form">
+              <input id="chatInput" value="What are the weekly fraud trends?" />
+              <button>Ask</button>
+            </form>
+          </div>
+        </section>
+
+        <section id="reports" class="view">
+          <header class="view-head">
+            <div>
+              <p class="eyebrow">Executive Reporting</p>
+              <h2>Report generation</h2>
+            </div>
+            <button id="generateReport">Generate Weekly Risk Report</button>
+          </header>
+          <div id="reportPreview" class="report-preview"></div>
+        </section>
+
+        <section id="lineage" class="view">
+          <header class="view-head">
+            <div>
+              <p class="eyebrow">Data Lineage</p>
+              <h2>Source to AI answer graph</h2>
+            </div>
+          </header>
+          <div id="lineageGraph" class="lineage-graph"></div>
+        </section>
+
+        <section id="quality" class="view">
+          <header class="view-head">
+            <div>
+              <p class="eyebrow">Data Trust</p>
+              <h2>Quality scorecards</h2>
+            </div>
+          </header>
+          <div id="qualityTable" class="data-table"></div>
+        </section>
+
+        <section id="audit" class="view">
+          <header class="view-head">
+            <div>
+              <p class="eyebrow">Audit Trail</p>
+              <h2>Operational and AI events</h2>
+            </div>
+          </header>
+          <div id="auditLog" class="audit-log"></div>
+        </section>
+      </main>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
+

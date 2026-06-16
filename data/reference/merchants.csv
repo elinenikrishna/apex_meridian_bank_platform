@@ -1,0 +1,6 @@
+merchant_id,merchant_name,merchant_category,region,onboarding_risk_tier,active_since
+MERC-00000001,Astra Grocery Market 1,Everyday grocery,Northeast,low,2018-04-12
+MERC-00000002,Astra Digital Market 2,Digital gaming marketplaces,West,high,2021-09-03
+MERC-00000003,Astra Travel Market 3,Expedited travel brokers,Southeast,medium,2019-11-18
+MERC-00000004,Astra Luxury Market 4,Cross-border luxury resale,Pacific,high,2020-07-22
+

@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apex-meridian-api
+  namespace: apex-meridian
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: apex-meridian-api
+  template:
+    metadata:
+      labels:
+        app: apex-meridian-api
+    spec:
+      containers:
+        - name: api
+          image: apex-meridian-api:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: apex-meridian-config
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 8
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 20
+            periodSeconds: 20
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "512Mi"
+            limits:
+              cpu: "1"
+              memory: "1Gi"
+

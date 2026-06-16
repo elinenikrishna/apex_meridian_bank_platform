@@ -1,0 +1,12 @@
+flowchart TD
+  A["postgres.card_authorizations"] --> B["kafka.card.transactions.raw"]
+  B --> C["bronze.card_transactions_raw"]
+  C --> D["silver.card_transactions"]
+  D --> E["gold.fraud_daily_kpis"]
+  D --> F["gold.customer_360"]
+  E --> G["warehouse.executive_risk_mart"]
+  G --> H["vector.governed_metric_context"]
+  H --> I["ai.weekly_risk_report"]
+  E --> J["executive.dashboard"]
+  F --> J
+

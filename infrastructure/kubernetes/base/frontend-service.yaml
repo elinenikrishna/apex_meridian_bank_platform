@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apex-meridian-frontend
+  namespace: apex-meridian
+spec:
+  selector:
+    app: apex-meridian-frontend
+  ports:
+    - port: 80
+      targetPort: 80
+

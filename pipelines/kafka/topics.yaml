@@ -1,0 +1,44 @@
+cluster: apex-meridian-local
+retention_policy: banking-regulated-demo
+topics:
+  - name: card.transactions.raw
+    partitions: 18
+    replication_factor: 3
+    retention_ms: 604800000
+    schema_subject: card-transactions-raw-value
+  - name: merchant.events.raw
+    partitions: 8
+    replication_factor: 3
+    retention_ms: 604800000
+    schema_subject: merchant-events-raw-value
+  - name: customer.profile.updates
+    partitions: 8
+    replication_factor: 3
+    retention_ms: 2592000000
+    schema_subject: customer-profile-updates-value
+  - name: fraud.alerts.raw
+    partitions: 12
+    replication_factor: 3
+    retention_ms: 1209600000
+    schema_subject: fraud-alerts-raw-value
+  - name: payment.events.raw
+    partitions: 12
+    replication_factor: 3
+    retention_ms: 1209600000
+    schema_subject: payment-events-raw-value
+  - name: rewards.events.raw
+    partitions: 6
+    replication_factor: 3
+    retention_ms: 1209600000
+    schema_subject: rewards-events-raw-value
+  - name: ai.report.requests
+    partitions: 3
+    replication_factor: 3
+    retention_ms: 2592000000
+    schema_subject: ai-report-requests-value
+  - name: audit.events
+    partitions: 6
+    replication_factor: 3
+    retention_ms: 31536000000
+    schema_subject: audit-events-value
+

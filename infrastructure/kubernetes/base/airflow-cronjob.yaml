@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: apex-meridian-governance-export
+  namespace: apex-meridian
+spec:
+  schedule: "30 6 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: governance-export
+              image: apex-meridian-api:local
+              command: ["python", "scripts/run_quality_scorecards.py"]
+              envFrom:
+                - configMapRef:
+                    name: apex-meridian-config
+

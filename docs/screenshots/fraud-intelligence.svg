@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Apex Meridian fraud intelligence preview">
+  <rect width="1200" height="760" fill="#f7f6f1"/>
+  <text x="52" y="74" fill="#b66b2b" font-size="18" font-family="Arial" font-weight="700">FINANCIAL CRIMES</text>
+  <text x="52" y="128" fill="#16201f" font-size="52" font-family="Arial" font-weight="800">Fraud Intelligence Dashboard</text>
+  <rect x="52" y="172" width="720" height="520" rx="8" fill="#ffffff" stroke="#d9ded7"/>
+  <rect x="804" y="172" width="344" height="246" rx="8" fill="#ffffff" stroke="#d9ded7"/>
+  <rect x="804" y="446" width="344" height="246" rx="8" fill="#ffffff" stroke="#d9ded7"/>
+  <text x="84" y="226" fill="#16201f" font-size="24" font-family="Arial" font-weight="700">High-Risk Merchant Categories</text>
+  <g font-family="Arial" font-size="18">
+    <text x="84" y="296" fill="#16201f">Cross-border luxury resale</text>
+    <rect x="420" y="274" width="270" height="24" rx="6" fill="#a63d54"/>
+    <text x="84" y="366" fill="#16201f">Digital gaming marketplaces</text>
+    <rect x="420" y="344" width="248" height="24" rx="6" fill="#a63d54"/>
+    <text x="84" y="436" fill="#16201f">Expedited travel brokers</text>
+    <rect x="420" y="414" width="218" height="24" rx="6" fill="#c89120"/>
+    <text x="84" y="506" fill="#16201f">Electronics repair aggregators</text>
+    <rect x="420" y="484" width="196" height="24" rx="6" fill="#00796b"/>
+  </g>
+  <text x="836" y="226" fill="#16201f" font-size="24" font-family="Arial" font-weight="700">Regional Risk</text>
+  <g fill="#00796b">
+    <rect x="836" y="282" width="232" height="18" rx="6"/>
+    <rect x="836" y="332" width="260" height="18" rx="6"/>
+    <rect x="836" y="382" width="196" height="18" rx="6"/>
+  </g>
+  <text x="836" y="500" fill="#16201f" font-size="24" font-family="Arial" font-weight="700">Model Signals</text>
+  <g fill="#fbfaf6" stroke="#d9ded7">
+    <rect x="836" y="542" width="132" height="42" rx="8"/>
+    <rect x="984" y="542" width="132" height="42" rx="8"/>
+    <rect x="836" y="600" width="180" height="42" rx="8"/>
+  </g>
+</svg>
+

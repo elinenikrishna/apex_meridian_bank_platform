@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="Apex Meridian lakehouse explorer preview">
+  <rect width="1200" height="760" fill="#f7f6f1"/>
+  <text x="52" y="74" fill="#b66b2b" font-size="18" font-family="Arial" font-weight="700">LAKEHOUSE EXPLORER</text>
+  <text x="52" y="128" fill="#16201f" font-size="52" font-family="Arial" font-weight="800">Bronze, Silver, Gold Layers</text>
+  <g>
+    <rect x="64" y="208" width="320" height="420" rx="8" fill="#ffffff" stroke="#d9ded7"/>
+    <rect x="440" y="208" width="320" height="420" rx="8" fill="#ffffff" stroke="#d9ded7"/>
+    <rect x="816" y="208" width="320" height="420" rx="8" fill="#ffffff" stroke="#d9ded7"/>
+  </g>
+  <text x="104" y="276" fill="#16201f" font-size="42" font-family="Arial" font-weight="800">Bronze</text>
+  <text x="480" y="276" fill="#16201f" font-size="42" font-family="Arial" font-weight="800">Silver</text>
+  <text x="856" y="276" fill="#16201f" font-size="42" font-family="Arial" font-weight="800">Gold</text>
+  <text x="104" y="340" fill="#64716f" font-size="22" font-family="Arial">142.9M records</text>
+  <text x="480" y="340" fill="#64716f" font-size="22" font-family="Arial">139.7M records</text>
+  <text x="856" y="340" fill="#64716f" font-size="22" font-family="Arial">18.4M records</text>
+  <g fill="#00796b">
+    <rect x="104" y="426" width="220" height="16" rx="8"/>
+    <rect x="480" y="426" width="240" height="16" rx="8"/>
+    <rect x="856" y="426" width="260" height="16" rx="8"/>
+  </g>
+  <g fill="#fbfaf6" stroke="#d9ded7">
+    <rect x="104" y="500" width="220" height="64" rx="8"/>
+    <rect x="480" y="500" width="220" height="64" rx="8"/>
+    <rect x="856" y="500" width="220" height="64" rx="8"/>
+  </g>
+</svg>
+

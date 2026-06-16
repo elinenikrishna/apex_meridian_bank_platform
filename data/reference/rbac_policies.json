@@ -1,0 +1,10 @@
+{
+  "roles": {
+    "risk_executive": ["gold.fraud_daily_kpis", "warehouse.executive_risk_mart", "gold.data_quality_scorecards"],
+    "fraud_analyst": ["gold.fraud_daily_kpis", "silver.card_transactions_masked"],
+    "data_steward": ["gold.data_quality_scorecards", "governance.ai_answer_audit", "lineage.platform_graph"],
+    "customer_success": ["gold.customer_360_masked"]
+  },
+  "denied_fields": ["full_name", "email", "phone", "ssn_token", "raw_event_payload"]
+}
+
